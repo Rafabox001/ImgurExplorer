@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Section preferences">
+        <ListPreference
+            android:key="@string/section_list_key"
+            android:title="@string/section_list_title"
+            android:entries="@array/section_options"
+            android:entryValues="@array/section_options_values"
+            android:defaultValue="hot"/>
+
+        <CheckBoxPreference
+            android:key="@string/viral_checkbox_key"
+            android:title="@string/viral_checkbox_title"
+            android:summaryOn="@string/viral_checkbox_summary_on"
+            android:summaryOff="@string/viral_checkbox_summary_off"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Sort Data">
+
+        <ListPreference
+            android:key="@string/sort_list_key"
+            android:title="@string/sort_list_title"
+            android:entries="@array/sort_options"
+            android:entryValues="@array/sort_options_values"
+            android:defaultValue="viral"/>
+
+        <ListPreference
+            android:key="@string/window_list_key"
+            android:title="@string/window_list_title"
+            android:entries="@array/window_options"
+            android:entryValues="@array/window_options_values"
+            android:defaultValue="day"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Generals">
+
+        <ListPreference
+            android:key="@string/layout_list_key"
+            android:title="@string/layout_list_title"
+            android:entries="@array/layout_options"
+            android:entryValues="@array/layout_options_values"
+            android:defaultValue="viral"/>
+    </PreferenceCategory>
+</PreferenceScreen>

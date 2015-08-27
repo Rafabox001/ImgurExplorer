@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blackboxstudios.rafael.imgurexplorer.AboutMeFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card1"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardElevation="@dimen/elevation">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="@dimen/small_padding"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description_detail"
+                android:text="@string/personal"
+                android:textColor="@color/primary_color"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primary_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/image_detail"
+                        android:src="@drawable/profile"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rafael Domingo Castillo"
+                        android:textColor="@color/primary_color"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:id="@+id/role"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Android Developer"
+                        android:textColor="@color/accent_color"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:id="@+id/mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="rafabox001@gmail.com"
+                        android:textColor="@color/highligth"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:id="@+id/linkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="https://mx.linkedin.com/in/rafabox001"
+                        android:textColor="@color/highligth"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5564922659"
+                        android:textColor="@color/primary_color"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_gravity="left"/>
+
+                    <TextView
+                        android:id="@+id/blank"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/primary_color"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_gravity="left"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/card2"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardElevation="@dimen/elevation">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/small_padding"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:text="@string/contact"
+                android:textColor="@color/primary_color"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primary_color"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mailImage"
+                        android:src="@drawable/mail"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linkedinImage"
+                        android:src="@drawable/linkedin"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/portfolio"
+                        android:src="@drawable/udacity"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phoneImage"
+                        android:src="@drawable/phone"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/github"
+                        android:src="@drawable/github"/>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
